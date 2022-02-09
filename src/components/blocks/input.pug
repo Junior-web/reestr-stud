@@ -1,0 +1,13 @@
+mixin basicInput(type, name, value, placeholder)
+    input(class!= attributes.class, type= type, name= name, value= value, placeholder= placeholder)
+
+mixin input(type, name, label, icon, placeholder)
+    if type == 'submit'
+        +basicInput(type, name, attributes.value)(class="button form-group__submit")
+    else
+        label.form-group__label
+            span= label
+            div.form-group__input-box
+                +basicInput(type, name, placeholder)(class="form-group__input")
+                if icon
+                    img(src="#", alt="")                

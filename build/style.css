@@ -1,0 +1,137 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 1.6rem;
+    line-height: 148%;
+    color: #1A141F;
+}
+
+.title {
+    font-size: 4.4rem;
+    line-height: 128%;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+
+.third-title {
+    font-size: 2.2rem;
+    line-height: 124%;
+    font-weight: 600;
+    margin-bottom: 28px;
+}
+
+.link-in-text,
+.link-in-text:active,
+.link-in-text:visited,
+.link-in-text:link {
+    color: #0e56af;
+    font-size: 2.0rem;
+    line-height: 144%;
+    transition: .3s;
+}
+
+.link-in-text:hover {
+    color: #0b4389;
+}
+
+.logo-box__link {
+    font-size: 18px;
+    font-weight: 600;
+    color: #1A141F;
+    text-decoration: none;
+}
+
+.auth-box {
+    margin-bottom: 48px;
+}
+
+.auth-box span {
+    display: inline-block;
+    margin-right: 16px;
+}
+
+.account-data {
+    margin-bottom: 48px;
+}
+
+.account-data__group {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-right: -16px;
+}
+
+.account-data__group .form-group__input-box {
+    margin-right: 16px;
+}
+
+.reg-box {
+    align-items: stretch;
+}
+
+.reg-box__right {
+    background-image: url('img/reg-student.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.form-group__input {
+    padding: 12px;
+    background-color: #fff;
+    border-radius: 2px;
+    border: 1px solid #a5b3c3;
+    font-size: 1.4rem;
+    color: #1A141F;
+    transition: .3s;
+    outline: none;
+    width: 100%;
+}
+
+.form-group__input:focus {
+    border-color: #0e56af;
+    box-shadow: inset 0px 4px 5px rgba(33, 1, 38, .03);
+}
+
+.form-group__label {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+.form-group__label:not(:last-child) {
+    margin-bottom: 16px;
+}
+
+.form-group__label span {
+    font-size: 1.6rem;
+    line-height: 148%;
+    color: #1A141F;
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+
+.button {
+    padding: 12px 28px;
+    background-color: #0e56af;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    color: #fff;
+    font-size: 1.8rem;
+    line-height: 132%;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.button:hover {
+    background-color: #136ad5;
+}
