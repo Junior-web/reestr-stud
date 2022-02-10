@@ -14,13 +14,15 @@ body {
     font-size: 1.6rem;
     line-height: 148%;
     color: #1A141F;
+    background: linear-gradient(119.36deg, #fefefe 0%, #bac6e0 100%);
 }
 
 .title {
-    font-size: 4.4rem;
+    font-size: 3.6rem;
     line-height: 128%;
-    font-weight: 500;
+    font-weight: 600;
     margin-bottom: 40px;
+    color: #281766;
 }
 
 .third-title {
@@ -72,24 +74,30 @@ body {
 }
 
 .account-data__group .form-group__input-box {
-    margin-right: 16px;
+    margin-right: 24px;
 }
 
 .reg-box {
-    align-items: stretch;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.reg-box__right {
-    background-image: url('img/reg-student.jpg');
-    background-size: cover;
-    background-position: center;
+.reg-box__wrap {
+    background: linear-gradient(65.9deg, #fff 0%, #e8efff 100%);
+    box-shadow: 0px 40px 80px -25px rgba(105, 115, 138, .25), 0px 0px 80px -25px rgba(105, 115, 138, .25);
+    width: 100%;
+    padding: 80px 115px;
+    border-radius: 40px;
+    margin-top: 80px;
+    margin-bottom: 80px;
 }
 
 .form-group__input {
-    padding: 12px;
-    background-color: #fff;
-    border-radius: 2px;
-    border: 1px solid #a5b3c3;
+    padding: 8px;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #8C86A3;
     font-size: 1.4rem;
     color: #1A141F;
     transition: .3s;
@@ -98,8 +106,15 @@ body {
 }
 
 .form-group__input:focus {
-    border-color: #0e56af;
-    box-shadow: inset 0px 4px 5px rgba(33, 1, 38, .03);
+    border-color: #3C2D72;
+}
+
+.form-group__input::placeholder {
+    color: #B4B2BC;
+}
+
+.form-group__input::-webkit-input-placeholder {
+    color: #B4B2BC;
 }
 
 .form-group__label {
@@ -113,25 +128,27 @@ body {
 }
 
 .form-group__label span {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     line-height: 148%;
     color: #1A141F;
-    font-weight: 500;
+    font-weight: 600;
     margin-bottom: 4px;
 }
 
 .button {
-    padding: 12px 28px;
-    background-color: #0e56af;
-    border-radius: 4px;
+    padding: 18px 24px;
+    background-image: linear-gradient(to right, #FD4A53 0%,#F19C77 100%);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: 150%;
+    border-radius: 8px;
     border: 1px solid transparent;
     color: #fff;
-    font-size: 1.8rem;
-    line-height: 132%;
+    font-size: 1.6rem;
     cursor: pointer;
-    transition: .3s;
+    transition: .8s ease-in-out;
 }
 
 .button:hover {
-    background-color: #136ad5;
+    background-position: right;
 }
