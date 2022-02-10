@@ -11,53 +11,55 @@
   <body>
     <main class="main">
       <div class="container">
-        <div class="reg-box row">
-          <div class="reg-box__left col-7">
+        <div class="reg-box">
+          <div class="reg-box__wrap">
             <h1 class="title">Регистрация</h1>
-            <div class="auth-box"><span>Уже зарегистрированы? </span><a class="link-in-text auth-box__link" href="#">Войти</a></div>
             <form class="form-group">
               <div class="account-data">
                 <h3 class="third-title">Личные данные</h3>
-                <div class="account-data__wrap">
-                  <div class="account-data__group">
+                <div class="account-data__wrap row" style="align-items: flex-end">
+                  <div class="col-7">
                     <label class="form-group__label"><span>Фамилия</span>
                       <div class="form-group__input-box">
-                        <input class="form-group__input" type="text" name="surname" value="Введите Вашу фамилию"/>
+                        <input class="form-group__input" type="text" name="surname" value="" placeholder="Введите Вашу фамилию"/>
                       </div>
                     </label>
                     <label class="form-group__label"><span>Имя</span>
                       <div class="form-group__input-box">
-                        <input class="form-group__input" type="text" name="name" value="Введите Ваше имя"/>
+                        <input class="form-group__input" type="text" name="name" value="" placeholder="Введите Ваше имя"/>
                       </div>
                     </label>
                     <label class="form-group__label"><span>Отчество</span>
                       <div class="form-group__input-box">
-                        <input class="form-group__input" type="text" name="patronymic" value="Введите Ваше отчество"/>
+                        <input class="form-group__input" type="text" name="patronymic" value="" placeholder="Введите Ваше отчество"/>
                       </div>
                     </label>
-                  </div>
-                  <div class="account-data__group">
-                    <label class="form-group__label"><span>Дата рождения</span>
-                      <div class="form-group__input-box">
-                        <input class="form-group__input" type="date" name="birthdate"/>
-                      </div>
-                    </label>
-                    <label class="form-group__label"><span>Гражданство</span>
-                      <div class="form-group__input-box">
-                        <input class="form-group__input" type="text" name="citizenship"/>
-                      </div>
-                    </label>
-                  </div>
-                  <label class="form-group__label"><span>Электронная почта</span>
-                    <div class="form-group__input-box">
-                      <input class="form-group__input" type="email" name="email"/>
+                    <div class="account-data__group">
+                      <label class="form-group__label"><span>Дата рождения</span>
+                        <div class="form-group__input-box">
+                          <input class="form-group__input" type="date" name="birthdate" value=""/>
+                        </div>
+                      </label>
+                      <label class="form-group__label"><span>Гражданство</span>
+                        <div class="form-group__input-box">
+                          <input class="form-group__input" type="text" name="citizenship" value="" placeholder="Выберите страну"/>
+                        </div>
+                      </label>
                     </div>
-                  </label>
-                  <label class="form-group__label"><span>Пароль</span>
-                    <div class="form-group__input-box">
-                      <input class="form-group__input" type="password" name="password"/><img src="#" alt=""/>
+                    <div class="account-data__group">
+                      <label class="form-group__label"><span>Электронная почта</span>
+                        <div class="form-group__input-box">
+                          <input class="form-group__input" type="email" name="email" value="" placeholder="Введите электронную почту"/>
+                        </div>
+                      </label>
+                      <label class="form-group__label"><span>Пароль</span>
+                        <div class="form-group__input-box">
+                          <input class="form-group__input" type="password" name="password" value=""/><img src="#" alt=""/>
+                        </div>
+                      </label>
                     </div>
-                  </label>
+                  </div>
+                  <div class="col-5 h-100" style="background-image: url('img/stud-reg1.svg'); background-size: contain; background-repeat: no-repeat; background-position: bottom; height: 373px"></div>
                 </div>
               </div>
               <div class="passport-data">
@@ -66,30 +68,30 @@
                   <div class="account-data__group">
                     <label class="form-group__label"><span>Серия</span>
                       <div class="form-group__input-box">
-                        <input class="form-group__input" type="text" name="passport-series"/>
+                        <input class="form-group__input" type="text" name="passport-series" value="" placeholder="Введите серию паспорта"/>
                       </div>
                     </label>
                     <label class="form-group__label"><span>Номер</span>
                       <div class="form-group__input-box">
-                        <input class="form-group__input" type="text" name="passport-number"/>
+                        <input class="form-group__input" type="text" name="passport-number" value="" placeholder="Введите номер паспорта"/>
                       </div>
                     </label>
                   </div>
                   <div class="account-data__group">
                     <label class="form-group__label"><span>Код подразделения</span>
                       <div class="form-group__input-box">
-                        <input class="form-group__input" type="text" name="passport-code"/>
+                        <input class="form-group__input" type="text" name="passport-code" value="" placeholder="Введите код подразделения"/>
                       </div>
                     </label>
                     <label class="form-group__label"><span>Дата выдачи</span>
                       <div class="form-group__input-box">
-                        <input class="form-group__input" type="date" name="passport-date"/>
+                        <input class="form-group__input" type="date" name="passport-date" value=""/>
                       </div>
                     </label>
                   </div>
                   <label class="form-group__label"><span>Кем выдан</span>
                     <div class="form-group__input-box">
-                      <input class="form-group__input" type="text" name="passport-issued"/>
+                      <input class="form-group__input" type="text" name="passport-issued" value=""/>
                     </div>
                   </label>
                 </div>
@@ -98,7 +100,7 @@
                 <div class="politic-group">
                   <label class="form-group__label"><span></span>
                     <div class="form-group__input-box">
-                      <input class="form-group__input" type="checkbox"/>
+                      <input class="form-group__input" type="checkbox" value=""/>
                     </div>
                   </label>
                 </div>
@@ -106,7 +108,6 @@
               </div>
             </form>
           </div>
-          <div class="reg-box__right col-4 offset-1"></div>
         </div>
       </div>
     </main>
